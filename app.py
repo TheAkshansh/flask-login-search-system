@@ -21,9 +21,7 @@ def userSignup():
     email = request.form.get("email")
     password = request.form.get("password")
 
-    print("name:::::::::", name)
     userJsonString = {"name": name, "email": email, "password": password}
-    print("userJsonString:", userJsonString)
 
     y = mycol.insert_one(userJsonString)
     print(y.inserted_id)
