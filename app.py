@@ -15,12 +15,6 @@ def home():
 def login():
     return render_template('Login.html')
 
-
-@app.route('/dashboard')
-def dashboard():
-    return render_template('dashboard.html')
-
-
 @app.route('/userSignup', methods=['GET', 'POST'])
 def userSignup():
     name = request.form.get("name")
