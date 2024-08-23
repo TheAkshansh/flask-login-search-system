@@ -8,8 +8,8 @@ mycol = mydb["users"]
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return render_template('Home.html')
+def register():
+    return render_template('Register.html')
 
 @app.route('/login')
 def login():
@@ -29,7 +29,7 @@ def userSignup():
     print(y.inserted_id)
 
     userAddedStatus="User " + name + " added successfully.. "
-    return render_template("Home.html", userAddedStatus=userAddedStatus)
+    return render_template("Register.html", userAddedStatus=userAddedStatus)
 
 @app.route('/userLogin', methods=['POST'])
 def userLogin():
