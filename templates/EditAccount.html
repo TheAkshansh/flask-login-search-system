@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/normalize.css">
+</head>
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <h1 class="center">Update Your Account</h1>
+            <br> <br>
+                <div class="userStatus"> {{ userAddedStatus }} </div>
+            <br>
+            <form name="signup_form" action="/userEdit" method="POST">
+                <label for="name">Name</label>
+                <input type="name" name="name" class="field" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" class="field" required>
+
+                <p class="error error--hidden"></p>
+                
+                <form name="signup_form" action="/userEdit" method="POST">
+                    <br>
+                    <label for="email">Email (For Verification)</label>
+                    <input type="email" name="email" class="field" required>
+
+                <input type="submit" value="Update" class="btn">
+            </form>
+
+            <form name="signup_form" action="/home" >
+                <input type="submit" value="Go to Home" class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

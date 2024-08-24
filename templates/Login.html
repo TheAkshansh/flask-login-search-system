@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="/static/styles.css">
     <link rel="stylesheet" href="/static/normalize.css">
 </head>
 <body>
     <div class="card-wrapper">
         <div class="card">
-            <h1 class="center">Login To Your Account</h1>
+            <h1 class="center">Login To Your Account</h1>  <a href="/register">Register</a>
+            <br> <br>
+                <div class="userStatus"> {{ userAddedStatus }} </div>
+            <br>
             <form name="signup_form" action="/userLogin" method="POST">
                 <label for="email">Email</label>
                 <input type="email" name="email" class="field" required>
@@ -19,11 +22,9 @@
 
                 <p class="error error--hidden"></p>
                 
-                <input type="submit" value="Sign Up" class="btn">
+                <input type="submit" value="Login" class="btn">
             </form>
         </div>
-
-        {{ userAddedStatus }}
     </div>
     
 </body>
