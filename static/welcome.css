@@ -13,6 +13,31 @@ body{
    background-color: #f3f5f9;
 }
 
+.ontop{
+  display: flex;
+  width: 400px;
+  height: 300px;
+  margin-left: 230px;
+  border: solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.donateFunds{
+  width: 450px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #379777;
+  color: white;
+  border: none;
+  display: flex;
+  padding: 10px;
+  margin-top: 245px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .wrapper{
   display: flex;
   position: relative;

@@ -1,10 +1,12 @@
 from flask import Flask, request, session, render_template
+from datetime import datetime
 import pymongo
 from backend import app
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["mydatabase"]
 mycol = mydb["users"]
+blogCol = mydb["blogs"]
 
 @app.route('/')
 def home():
@@ -168,3 +170,36 @@ def userDelete():
     else:
         userAddedStatus="User " + email + " has been logged out.. "
         return render_template('Login.html', userAddedStatus=userAddedStatus)
+
+@app.route('/blogPage', methods=['GET'])
+def blogPage():
+    return render_template("Blogs.html")
+
+
+@app.route('/viewBlog', methods=['GET'])
+def viewBlog():
+    blogsData = blogCol.find()
+    userBlogList = []
+    for blog in blogsData:
+        print(blog)
+        #blogList.append("Posted Time: " + str(blog['post_time']) + " ,   Blog-Content: " + blog["blog_content"])
+        userBlogList.append("Blog-Content: " + blog["blog_content"])
+
+    if blogsData.retrieved > 0:
+        return render_template("Blogs.html", userBlogList=userBlogList)
+    else:
+        blog_content = "No Blog Found"
+        return render_template("Blogs.html", blog_content=blog_content)
+
+
+@app.route('/postBlogs', methods=['POST'])
+def postBlogs():
+    blog_content = request.form.get("blog_content")
+    blog_tags = request.form.get("blog_tags")
+    curr_time = datetime.now()
+
+    blogJsonString = {"blog_content": blog_content, "blog_tags": blog_tags, "post_time": curr_time}
+    y = blogCol.insert_one(blogJsonString)
+    print(y.inserted_id)
+    blogStatus="Blog posted successfully.."
+    return render_template("Blogs.html", blogStatus=blogStatus)
