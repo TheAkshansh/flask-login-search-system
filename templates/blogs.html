@@ -1,300 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/static/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <h1 class="center">View Blog</h1> <hr>
+            <br> 
+            <form name="signup_form" action="/viewBlog" method="GET">
+                <input type="submit" value="View Blog" class="btn">
+            </form>
+            <br>
+                <div class="userStatus"> 
+                    {% for blog in userBlogList %}
+                        <li>{{ blog }}</li>
+                        {% endfor %}
+                    </div>
+            <br>
+            <h1 class="center">Post Blog</h1> <hr>
+            
+            <form name="signup_form" action="/postBlogs" method="POST">
+                <li class="userStatus">{{ blogStatus }}</li>
+                <label class="userEmail" for="name">Blog Content</label>
+                <input type="name" name="blog_content" class="field" required>
+                <label class="userEmail" for="name">Tags</label>
+                <input type="name" name="blog_tags" class="field" required>
 
-    <link rel="stylesheet" href="/static/global.css" />
-    <link rel="stylesheet" href="/static/blogs.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="biodiversity-v15">
-      <div class="frame-parent60">
-        <div class="frame-parent61">
-          <div class="learn-more-wrapper18">
-            <div class="learn-more20">Learn More</div>
-          </div>
-          <div class="frame-parent62">
-            <div class="icon-park-outlinelike-wrapper18">
-              <img
-                class="icon-park-outlinelike20"
-                alt=""
-                src="/static/public/iconparkoutlinelike.svg"
-              />
-            </div>
-            <div class="solarbookmark-broken-wrapper18">
-              <img
-                class="solarbookmark-broken-icon20"
-                alt=""
-                src="/static/public/solarbookmarkbroken.svg"
-              />
-            </div>
-          </div>
+                <p class="error error--hidden"></p>
+                <input type="submit" value="Submit Blog" class="btn">
+            </form>
+            
+            
         </div>
-        <div class="frame-parent63">
-          <div class="learn-more-wrapper18">
-            <div class="learn-more20">Learn More</div>
-          </div>
-          <div class="frame-parent62">
-            <div class="icon-park-outlinelike-wrapper18">
-              <img
-                class="icon-park-outlinelike20"
-                alt=""
-                src="/static/public/iconparkoutlinelike.svg"
-              />
-            </div>
-            <div class="solarbookmark-broken-wrapper18">
-              <img
-                class="solarbookmark-broken-icon20"
-                alt=""
-                src="/static/public/solarbookmarkbroken1.svg"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="frame-parent65">
-          <div class="learn-more-wrapper18">
-            <div class="learn-more20">Learn More</div>
-          </div>
-          <div class="frame-parent62">
-            <div class="icon-park-outlinelike-wrapper18">
-              <img
-                class="icon-park-outlinelike20"
-                alt=""
-                src="/static/public/iconparkoutlinelike.svg"
-              />
-            </div>
-            <div class="solarbookmark-broken-wrapper18">
-              <img
-                class="solarbookmark-broken-icon20"
-                alt=""
-                src="/static/public/solarbookmarkbroken-1.svg"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="frame-parent61">
-          <div class="learn-more-wrapper18">
-            <div class="learn-more20">Learn More</div>
-          </div>
-          <div class="frame-parent62">
-            <div class="icon-park-outlinelike-wrapper18">
-              <img
-                class="icon-park-outlinelike20"
-                alt=""
-                src="/static/public/iconparkoutlinelike.svg"
-              />
-            </div>
-            <div class="solarbookmark-broken-wrapper18">
-              <img
-                class="solarbookmark-broken-icon20"
-                alt=""
-                src="/static/public/solarbookmarkbroken.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1 class="blogs-that-inspire">Blogs that Inspire</h1>
-      <div class="biodiversity-v1-inner3" id="groupContainer1">
-        <div class="rectangle-parent9">
-          <div class="frame-child45"></div>
-          <div class="premium-photo-elephant-famil-parent">
-            <img
-              class="premium-photo-elephant-famil"
-              loading="lazy"
-              alt=""
-              src="/static/public/premium-photo---elephant-family-in-water-1@2x.png"
-            />
-
-            <div class="frame-child46"></div>
-          </div>
-          <div class="ivory-and-extinction-container">
-            <span class="ivory-and-extinction">Ivory and Extinction: </span>
-            <span class="how-poaching-is"
-              >How Poaching is Driving Elephants to the Brink.</span
-            >
-          </div>
-          <div class="readings">
-            <div class="k-readings">
-              <p class="k">750k</p>
-              <p class="readings1">Readings</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="of-the-worlds-most-gorgeous-p-parent">
-        <img class="frame-child47" alt="" src="/static/public/group-51.svg" />
-
-        <div class="rectangle-parent10">
-          <div class="frame-child48"></div>
-          <div class="of-the-worlds-most-gorgeous-p-parent">
-            <img
-              class="of-the-worlds-most-gorgeous-p"
-              loading="lazy"
-              alt=""
-              src="/static/public/50-of-the-worlds-most-gorgeous-photos-of-animals-1@2x.png"
-            />
-
-            <div class="giraffe-blog-image"></div>
-          </div>
-          <div class="giraffes-on-the-container">
-            <span class="ivory-and-extinction">
-              <span>Giraffes on the Brink:</span>
-              <span class="span1"> </span>
-            </span>
-            <span class="how-poaching-is"
-              >The Silent Crisis Facing Africa’s Gentle Giants.</span
-            >
-          </div>
-          <div class="k-readings1">
-            <p class="k">500k</p>
-            <p class="readings1">Readings</p>
-          </div>
-        </div>
-        <div class="rectangle-parent11">
-          <div class="frame-child48"></div>
-          <div class="of-the-worlds-most-gorgeous-p-parent">
-            <img
-              class="of-the-worlds-most-gorgeous-p"
-              loading="lazy"
-              alt=""
-              src="/static/public/0bc07b37124d443abeba16d92b459cbb-1@2x.png"
-            />
-
-            <div class="giraffe-blog-image"></div>
-          </div>
-          <div class="elephants-in-peril-container">
-            <span>
-              <span class="ivory-and-extinction">Elephants in Peril:</span>
-              <span class="span2"> </span>
-            </span>
-            <span class="how-poaching-is"
-              >The Fight to Save Earth’s Largest Land Mammals.</span
-            >
-          </div>
-          <div class="k-readings2">
-            <p class="k">750k</p>
-            <p class="readings1">Readings</p>
-          </div>
-        </div>
-        <div class="ad48b32-aa36-4fd8-95b5-28d0005-parent">
-          <img
-            class="ad48b32-aa36-4fd8-95b5-28d0005-icon"
-            alt=""
-            src="/static/public/6ad48b32aa364fd895b528d000500bff-1@2x.png"
-          />
-
-          <div class="giraffe-blog-image"></div>
-          <div class="vanishing-giants-the-container">
-            <span class="ivory-and-extinction">Vanishing Giants: </span>
-            <span class="how-poaching-is">The Extinct Bears of Our Planet</span>
-          </div>
-          <div class="k-readings3">
-            <p class="k">750k</p>
-            <p class="readings1">Readings</p>
-          </div>
-        </div>
-      </div>
-      <div class="menu-container-parent">
-        <div class="menu-container">
-          <img
-            class="menu-container-child"
-            loading="lazy"
-            alt=""
-            src="/static/public/group-1000005086-2.svg"
-          />
-
-          <div class="navigation-bar1">
-            <nav class="nav-menu">
-              <div class="menu-buttons-wrapper" id="frameContainer">
-                <div class="menu-buttons">
-                  <div class="home4">Home</div>
-                </div>
-              </div>
-              <div class="menu-buttons-wrapper" id="frameContainer1">
-                <div class="endangered-animal-predictor-wrapper1">
-                  <div class="endangered-animal-predictor-container4">
-                    <p class="endangered-animal4">Endangered animal</p>
-                    <p class="k">predictor</p>
-                  </div>
-                </div>
-              </div>
-              <div class="nav-menu-child" id="frameContainer2">
-                <div class="donations-wrapper2">
-                  <div class="donations5">Donations</div>
-                </div>
-              </div>
-              <button class="blogs-link">
-                <div class="blogs4">Blogs</div>
-              </button>
-              <button class="nav-menu-inner1" id="frameButton">
-                <div class="about-us-wrapper3">
-                  <div class="about-us6">About Us</div>
-                </div>
-              </button>
-            </nav>
-          </div>
-        </div>
-        <button class="logout-button2">
-          <div class="log-out4">LOG OUT</div>
-        </button>
-      </div>
-      <button class="write-blog-wrapper" id="frameButton1">
-        <div class="write-blog">Write Blog</div>
-      </button>
     </div>
-
-    <script>
-      var groupContainer1 = document.getElementById("groupContainer1");
-      if (groupContainer1) {
-        groupContainer1.addEventListener("click", function (e) {
-          window.location.href = "./article.html";
-        });
-      }
-      
-      var frameContainer = document.getElementById("frameContainer");
-      if (frameContainer) {
-        frameContainer.addEventListener("click", function (e) {
-          window.location.href = "./index.html";
-        });
-      }
-      
-      var frameContainer1 = document.getElementById("frameContainer1");
-      if (frameContainer1) {
-        frameContainer1.addEventListener("click", function (e) {
-          window.location.href = "./animal_predictor.html";
-        });
-      }
-      
-      var frameContainer2 = document.getElementById("frameContainer2");
-      if (frameContainer2) {
-        frameContainer2.addEventListener("click", function (e) {
-          window.location.href = "./donation.html";
-        });
-      }
-      
-      var frameButton = document.getElementById("frameButton");
-      if (frameButton) {
-        frameButton.addEventListener("click", function (e) {
-          // Please sync "BioDiversity V1" to the project
-        });
-      }
-      
-      var frameButton1 = document.getElementById("frameButton1");
-      if (frameButton1) {
-        frameButton1.addEventListener("click", function (e) {
-          window.location.href = "./blog_editor.html";
-        });
-      }
-      </script>
-  </body>
+</body>
 </html>
