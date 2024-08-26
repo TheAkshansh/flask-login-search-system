@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/static/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <h1 class="center">View Blog</h1> <hr>
+            <br> 
+            <form name="signup_form" action="/viewBlog" method="GET">
+                <input type="submit" value="View Blog" class="btn">
+            </form>
+            <br>
+                <div class="userStatus"> 
+                    {% for blog in userBlogList %}
+                        <li>{{ blog }}</li>
+                        {% endfor %}
+                    </div>
+            <br>
+            <h1 class="center">Post Blog</h1> <hr>
+            
+            <form name="signup_form" action="/postBlogs" method="POST">
+                <li class="userStatus">{{ blogStatus }}</li>
+                <label class="userEmail" for="name">Blog Content</label>
+                <input type="name" name="blog_content" class="field" required>
+                <label class="userEmail" for="name">Tags</label>
+                <input type="name" name="blog_tags" class="field" required>
+
+                <p class="error error--hidden"></p>
+                <input type="submit" value="Submit Blog" class="btn">
+            </form>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "66c7cc47284210253dcfed87"
+  },
+  "name": "Nakul Dev",
+  "email": "nakul.dev@gmail.com",
+  "password": "Nakul123"
+},
+{
+  "_id": {
+    "$oid": "66cc305da78b36cc8d49bde9"
+  },
+  "name": "Nikunj Dev",
+  "email": "devnikunj22@gmail.com",
+  "password": "Nikunj123"
+},
+{
+  "_id": {
+    "$oid": "66cc312fc18a0283e0b8e7e0"
+  },
+  "name": "Nikunj Dev",
+  "email": "devnikunj115@gmail.com",
+  "password": "Nikunj123"
+}]
