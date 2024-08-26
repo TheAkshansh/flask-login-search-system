@@ -8,7 +8,7 @@ mycol = mydb["users"]
 
 @app.route('/')
 def home():
-    return render_template('Login.html')
+    return render_template('Welcome.html')
 
 @app.route('/login')
 def login():
@@ -41,7 +41,7 @@ def logout():
     session.pop('email', None)
     session.pop('name', None)
     userAddedStatus="User " + name + " has been logged out.. "
-    return render_template('Login.html', userAddedStatus=userAddedStatus)
+    return render_template('Welcome.html', userAddedStatus=userAddedStatus)
 
 
 @app.route('/userSignup', methods=['GET', 'POST'])
@@ -62,7 +62,7 @@ def userSignup():
     else:
         y = mycol.insert_one(userJsonString)
         print(y.inserted_id)
-        userAddedStatus="User " + email + " added successfully.. You can login now.. "
+        userAddedStatus="User " + email + " added successfully.."
         return render_template("Login.html", userAddedStatus=userAddedStatus)
         
 
@@ -83,6 +83,10 @@ def userLogin():
             return render_template("Welcome.html", userAddedStatus=userAddedStatus)
         else:
             userAddedStatus="User " + email + " Login Validation Failed.. "
+            return render_template("Login.html", userAddedStatus=userAddedStatus)
+    
+    if userLogin.retrieved==0:
+            userAddedStatus=email+" not found.. "
             return render_template("Login.html", userAddedStatus=userAddedStatus)
 
 @app.route('/userEdit', methods=['POST'])
@@ -116,10 +120,10 @@ def userEdit():
 
 @app.route('/userView', methods=['POST'])
 def userView():
-    email = request.form.get("email")
+    name = request.form.get("name")
     #if session.get(email) == True:
     if 'email' in session:
-        loginJsonString = {"email": email}
+        loginJsonString = {"name": {"$regex": name, "$options":"i"}}
         print("loginJsonString:", loginJsonString)
         userData = mycol.find(loginJsonString , {"name":1, "email":1})
         print("userData-1:", userData)
@@ -129,16 +133,19 @@ def userView():
         #    for rec in userData:
         #        userAddedStatus="Name: " + rec["name"] + "  ,  Email: " + rec["email"]
         #        return render_template("Search.html", userAddedStatus=userAddedStatus)
+
+        usersList = []
         for rec in userData:
                 print("1111")
-                userAddedStatus="Name: " + rec["name"] + "  ,  Email: " + rec["email"]
-                return render_template("Search.html", userAddedStatus=userAddedStatus)
-        
-        if userData.retrieved==0:
-            userAddedStatus=email+" not found.. "
+                usersList.append("Name: " + rec["name"] + " ,   Email: " + rec["email"])
+
+        if userData.retrieved > 0:
+            return render_template("Search.html", usersList=usersList)
+        else:
+            userAddedStatus=name+" not found.. "
             return render_template("Search.html", userAddedStatus=userAddedStatus)
     else:
-        userAddedStatus="User " + email + " has been logged out.. "
+        userAddedStatus="User " + name + " has been logged out.. "
         return render_template('Login.html', userAddedStatus=userAddedStatus)
 
 

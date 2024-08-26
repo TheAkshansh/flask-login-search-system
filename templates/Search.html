@@ -16,11 +16,15 @@
             <br> 
             <p class="logged_user"><b>Hello, {{ session.get("name") }}!</b></p>
             <br>
-                <div class="userStatus"> {{ userAddedStatus }} </div>
+                <div class="userStatus"> 
+                    {% for user in usersList %}
+                        <li>{{ user }}</li>
+                        {% endfor %}
+                    </div>
             <br>
             <form name="signup_form" action="/userView" method="POST">
-                <label class="userEmail" for="email">Email of the User</label>
-                <input type="email" name="email" class="field" autocomplete="off" required>
+                <label class="userEmail" for="name">Type Username</label>
+                <input type="name" name="name" class="field" required>
 
                 <p class="error error--hidden"></p>
                 

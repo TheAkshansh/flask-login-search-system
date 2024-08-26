@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="/static/welcome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome {{ session.get("name") }} to Home Page of this Website!</h1>   
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="/welcome"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-donations"></i>Donations</a></li>
+                {% if 'email' in session %}<li><a href="/model"><i class="fas fa-predictor"></i>Animal Predictor</a></li>  {% endif %}
+                <li><a href="#"><i class="fas fa-blog"></i>Blogs</a></li>
+                <li><a href="#"><i class="fas fa-aboutus"></i>About us</a></li>
+                {% if 'email' in session %}<li><a href="/userAccount"><i class="fas fa-aboutus"></i>Update Account</a></li>  {% endif %}
+                {% if 'email' in session %}<li><a href="/search"><i class="fas fa-aboutus"></i>Search a User</a></li>  {% endif %}
+                {% if 'email' in session %}<li><a href="/delete"><i class="fas fa-aboutus"></i>Delete Account</a></li>  {% endif %}
+                <br><br><br><br><br><br>><br><br>
 
-    <a href="/logout">Logout</a>
-    <BR><BR><BR><BR>
-    <a href="/userAccount">Update your Account Info.</a>
-    <BR><BR>
-    <a href="/search">Search Account Info.</a>
-    <BR>
-    <BR>
-    <a href="/model">Animal Predictor</a>   
-    <BR>
-    <BR>
-        <a href="/delete">Delete User</a>
-
+                {% if 'email' in session %}
+                <nav class="wrapper3">
+                    <p class="loggedUser">Welcome {{ session.get("name") }}</p> <button><a class="btn3" href="/logout">Logout</a></button>
+                </nav>
+                {% else %}
+                <nav class="wrapper2">
+                    <button><a class="btn" href="/login">Login</a></button> <button><a class="btn2" href="/register">Signup</a></button>
+                    <p class="guestUser">Welcome, Please Signup or Login to Unlock all the features!</p>
+                </nav>
+                {% endif %}
+            </ul>
 </body>
 </html>
