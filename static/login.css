@@ -1,0 +1,95 @@
+body {
+    font-family: Mukta, Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+    color: #DFE0DC;
+}
+
+.card-wrapper{
+    border: none;
+    border-radius: 30px;
+    width: 566.52px;
+    height: 566.52px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(55,151,119,1) -100%, rgba(48,48,48,1) 50%, rgba(55,151,119,1) 200%);
+    margin-left: 420px;
+    margin-top: 50px;
+    position:relative;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    padding: 0;
+}
+
+.userEmail{
+    display: block;
+    margin-left: -205px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.field{
+    border: solid 1px;
+    border-color: lightgray;
+    border-radius: 35px;
+    background: transparent;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.userPass{
+    display: block;
+    margin-left: -146px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.center{
+    font-size: 50px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+}
+
+.registerLink{
+    color: white;
+    font-size: 23px;
+}
+
+.registerLink2{
+    color: white;
+    font-size: 23px;
+    margin: 0;
+    display: inline;
+    margin-right: 8px;
+}
+
+.btn{
+    margin-bottom: 50px;
+    margin-top: 8px;
+    width: 315px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    background-color: #379777;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.userStatus{
+    font-size: 20px;
+    color: orangered;
+    padding-top: 10px;
+}

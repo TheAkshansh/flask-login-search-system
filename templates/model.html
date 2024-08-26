@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Endangered Animal Predictor</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/script.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1><u>Endangered Animal Predictor</u></h1>
+  <h2>‣ Guide: Enter the size values of the animal as asked below in centimeters.</h2>
+  <form id="predictForm" action="/predict" method="POST" >
+    <input inputmode="decimal" id="f1" name="feature1" placeholder="Ear Size (cm)" required>
+    <input inputmode="decimal" id="f2" name="feature2" placeholder="Body Size (cm)" required>
+    <input inputmode="decimal" id="f3" name="feature3" placeholder="Eyes Size (cm)" required>
+    <input inputmode="decimal" id="f4" name="feature4" placeholder="Heart Length (cm)" required>
+    <button type="submit">Predict Endangered Animal</button>
+  </form>
+  <div id="predictionResult">
+
+    <B>Endangered Animal Details:</B> <BR>
+      {{ predictedAnimal }}
+
+  </div>
+  <form name="signup_form" action="/welcome" >
+    <input type="submit" value="Go to Home" class="btn2">
+</form>
+</div>
+
+</body>
+</html>

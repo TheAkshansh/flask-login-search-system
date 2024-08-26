@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
-    <link rel="stylesheet" href="/static/styles.css">
-    <link rel="stylesheet" href="/static/normalize.css">
+    <title>Register Yourself</title>
+    <link rel="stylesheet" href="/static/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="card-wrapper"> 
         <div class="card">
-            <h1 class="center">Create An Account</h1>   <a href="/login">Login</a>
+            <h1 class="center">Create an Account</h1>
+            <hr>
             <br> <br>
                 <div class="userStatus"> {{ userAddedStatus }} </div>
             <br>
             <form name="signup_form" action="/userSignup" method="POST">
-                <label for="name">Name</label>
-                <input type="text" name="name" class="field" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" class="field" required>
-                <label for="password">Password</label>
+                <label class="userPass"for="name">Username</label>
+                <input type="text" name="name" class="field" autocomplete="off" required>
+                <label class="userEmail" for="email">Email</label>
+                <input type="email" name="email" class="field" autocomplete="off" required>
+                <label class="userPass" for="password">Password</label>
                 <input type="password" name="password" class="field" required>
 
                 <p class="error error--hidden"></p>
                 
-                <input type="submit" value="Sign Up" class="btn">
+                <input type="submit" value="Signup" class="btn">
             </form>
+            <p class="registerLink2">Already have an Account?</p><a class="registerLink" href="/login">Login Now!</a>
         </div>
     </div>
     

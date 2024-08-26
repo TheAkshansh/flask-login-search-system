@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Page</title>
+    <link rel="stylesheet" href="/static/delete.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <h1 class="center">Delete an Account</h1> <hr>
+            <br>
+            <p class="logged_user"><b>Hello, {{ session.get("name") }}!</b></p>
+            <br>
+                <div class="userStatus"> {{ userAddedStatus }} </div>
+            <br>
+            <form name="signup_form" action="/userDelete" method="POST">
+                <label class="userEmail" for="email" autocomplete="off">Email of the User</label>
+                <input type="email" name="email" class="field" required>
+
+                <p class="error error--hidden"></p>
+                
+                    <input type="submit" value="Delete" class="btn">
+                </form>
+
+            <form name="signup_form" action="/welcome" >
+                <input type="submit" value="Go to Home" class="btn2">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

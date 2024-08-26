@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segue UI', Tahoma, Geneva, Verdana, Overpass, sans-serif;
+  line-height: 1.5;
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(270deg, green, darkorange, red);
+}
+
+.container {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 0px;
+  background: ;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 1000;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size:30px;
+}
+
+form {
+  width: 70%;
+  max-width: 800px;
+  background-color:  rgb(212, 225, 235);
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.form-group label {
+  font-size: 18px;
+}
+
+
+.form-group input[input mode="decimal"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[input mode="decimal"]:focus {
+  border-color: #007bff;
+  outline: none;
+
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  border: none;
+  background-color: #08c334;
+  color: #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color:#156a27;
+}
+
+#predictionResult {
+  margin-top: 10px;
+  padding: 20px;
+      background-color: #f8f9fa;
+  border: 2px solid #ced4da;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}

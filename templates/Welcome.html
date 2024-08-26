@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="/static/welcome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Home Page of this Website!</h1>
+    <h1>Welcome {{ session.get("name") }} to Home Page of this Website!</h1>   
+
+    <a href="/logout">Logout</a>
+    <BR><BR><BR><BR>
     <a href="/userAccount">Update your Account Info.</a>
+    <BR><BR>
+    <a href="/search">Search Account Info.</a>
+    <BR>
+    <BR>
+    <a href="/model">Animal Predictor</a>   
+    <BR>
+    <BR>
+        <a href="/delete">Delete User</a>
+
 </body>
 </html>
