@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Blog Post</title>
+    <link rel="stylesheet" href="/static/blog_editor.css">
+</head>
+<body>
+  <div class="createedit-blogs-wrapper">
+    <div class="createedit-blogs" id="createeditBlogsText">
+      <span class="create">Back</span>
+      <script>
+        var createeditBlogsText = document.getElementById("createeditBlogsText");
+        if (createeditBlogsText) {
+          createeditBlogsText.addEventListener("click", function (e) {
+            window.location.href = "./blogs.html";
+          });
+        }
+        </script>
+    </div>
+  </div>
+  <div class="container">
+        <h1>Create Your Blog Post</h1>
+        <form id="blogForm">
+            <input type="text" id="title" placeholder="Enter Blog Title..." required class="blogformtitle">
+        </form>
+        <br>
+        <div class="options">
+            <button id="bold" class="option-button-format">
+                <i class="fa-solid fa-bold"><b>B</b></i>
+            </button>
+            <button id="italic" class="option-button-format">
+                <i class="fa-solid fa-italic">I</i>
+            </button>
+            <button id="underline" class="option-button-format">
+                <i class="fa-solid fa-underline"><ins>U</ins></i>
+            </button>
+            <button id="strikethrough" class="option-button-format">
+                <i class="fa-solid fa-strikethrough"><del>S</del></i>
+            </button>
+            <button id="superscript" class="option-button-format">
+                <i class="fa-solid fa-superscript">X<sup>2</sup></i>
+            </button>
+            <button id="subscript" class="option-button-format">
+                <i class="fa-solid fa-subscript">X<sub>2</sub></i>
+            </button>
+            <button id="insertOrderedList" class="option-button-format">
+                <div class="fa-solid fa-list-ol">Ordered List</div>
+            </button>
+            <button id="insertUnorderedList" class="option-button-format">
+                <i class="fa-solid fa-list">Unordered List</i>
+            </button>
+            <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link">🔗Link</i>
+            </button>
+            <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button" />
+                <label for="foreColor">Font Color</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button" />
+                <label for="backColor">Highlight Color</label>
+            </div>
+            <div>
+                <input type="file" id="file" class="img" />
+                <label for="file" class="label-img">🖼️ Upload Image</label>
+                <script>
+                    let inputfile=document.getElementById("file")
+                    let placehere=document.getElementById("text-input")
+
+                    inputfile.onchange=function(){
+                        placehere.src = URL.createObjectURL(inputfile.files)
+                    }
+                </script>
+            </div>
+        </div>
+        <div id="text-input" contenteditable="true" style="color: #ffffff;"></div>
+        <br>
+        <form id="blogForm">
+            <button type="submit" class="button-submit">Submit Blog</button>
+        </form>
+        <div id="blogPosts"></div>
+    </div>
+    <script src="/static/blog_editor.js"></script>
+</body>
+</html>

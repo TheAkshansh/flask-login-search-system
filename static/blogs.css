@@ -1,0 +1,624 @@
+.learn-more20 {
+  height: 10px;
+  position: relative;
+  text-decoration: underline;
+  display: inline-block;
+}
+.learn-more-wrapper18 {
+  width: 70.8px;
+  border-radius: 13.81px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs-2) var(--padding-xs);
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.icon-park-outlinelike20 {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon-park-outlinelike-wrapper18 {
+  height: 20.7px;
+  width: 20.7px;
+  border-radius: 13.81px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs-2) var(--padding-9xs);
+  box-sizing: border-box;
+}
+.solarbookmark-broken-icon20 {
+  height: 10.4px;
+  width: 10.4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.solarbookmark-broken-wrapper18 {
+  height: 20.7px;
+  width: 20.7px;
+  border-radius: 13.81px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs-2) var(--padding-8xs);
+  box-sizing: border-box;
+}
+.frame-parent62 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-9);
+}
+.frame-parent61,
+.frame-parent63,
+.frame-parent65 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 185.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-parent63,
+.frame-parent65 {
+  left: 220.2px;
+}
+.frame-parent65 {
+  left: 440.3px;
+}
+.frame-parent60 {
+  position: absolute;
+  top: 531.5px;
+  left: 67px;
+  width: 626px;
+  height: 20.7px;
+  display: none;
+  font-size: var(--font-size-4xs-2);
+}
+.blogs-that-inspire {
+  margin: 0;
+  position: absolute;
+  top: 115px;
+  left: 237.2px;
+  font-size: var(--font-size-37xl);
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: inherit;
+  display: inline-block;
+  width: 431.1px;
+  z-index: 1;
+}
+.frame-child45 {
+  height: 347.8px;
+  width: 538.8px;
+  position: relative;
+  border-radius: 36.93px;
+  background-color: var(--color-seagreen-300);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.premium-photo-elephant-famil {
+  border-radius: 36.95px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.frame-child46,
+.premium-photo-elephant-famil,
+.premium-photo-elephant-famil-parent {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.frame-child46 {
+  border-radius: 36.93px;
+  background: linear-gradient(180deg, transparent, #000);
+  z-index: 2;
+}
+.premium-photo-elephant-famil-parent {
+  margin: 0 !important;
+}
+.ivory-and-extinction {
+  font-weight: 200;
+}
+.how-poaching-is {
+  font-size: var(--font-size-smi-7);
+  font-weight: 100;
+}
+.ivory-and-extinction-container {
+  height: 34px;
+  width: 265.6px;
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.k {
+  margin: 0;
+}
+.readings1 {
+  margin: 0;
+  font-size: var(--font-size-5xs-5);
+}
+.k-readings {
+  position: relative;
+  text-transform: capitalize;
+  z-index: 3;
+}
+.readings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+}
+.biodiversity-v1-inner3,
+.rectangle-parent9 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.rectangle-parent9 {
+  flex: 1;
+  border-radius: 36.93px;
+  background-color: var(--color-seagreen-300);
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-16xl) var(--padding-16xl) 35.1px var(--padding-14xl);
+  box-sizing: border-box;
+  position: relative;
+  min-height: 348px;
+  gap: var(--gap-xl);
+}
+.biodiversity-v1-inner3 {
+  position: absolute;
+  top: 278.7px;
+  left: 204.8px;
+  width: 538.8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  z-index: 1;
+}
+.frame-child47 {
+  position: absolute;
+  top: -153px;
+  left: -71px;
+  width: 2026px;
+  height: 1366px;
+}
+.frame-child48,
+.of-the-worlds-most-gorgeous-p {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.frame-child48 {
+  top: 1.3px;
+  border-radius: 36.93px;
+  background-color: var(--color-seagreen-300);
+  display: none;
+}
+.of-the-worlds-most-gorgeous-p {
+  top: 0;
+  border-radius: 36.95px;
+  object-fit: cover;
+}
+.giraffe-blog-image {
+  border-radius: 36.93px;
+  background: linear-gradient(180deg, transparent, #000);
+}
+.giraffe-blog-image,
+.of-the-worlds-most-gorgeous-p-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.span1 {
+  font-size: var(--font-size-base-2);
+}
+.giraffes-on-the-container,
+.k-readings1 {
+  position: absolute;
+  text-transform: capitalize;
+  z-index: 3;
+}
+.giraffes-on-the-container {
+  top: 277.2px;
+  left: 26.2px;
+  display: inline-block;
+  width: 280.4px;
+}
+.k-readings1 {
+  top: 290.2px;
+  left: 479px;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+}
+.rectangle-parent10 {
+  position: absolute;
+  top: 640.5px;
+  left: 757.6px;
+  border-radius: 36.93px;
+  background-color: var(--color-seagreen-300);
+  width: 538.9px;
+  height: 347.8px;
+  z-index: 1;
+  font-size: 16.4px;
+}
+.span2 {
+  font-weight: 500;
+  font-family: var(--font-inter);
+}
+.elephants-in-peril-container,
+.k-readings2 {
+  position: absolute;
+  text-transform: capitalize;
+  z-index: 3;
+}
+.elephants-in-peril-container {
+  top: 277.2px;
+  left: 33.9px;
+  display: inline-block;
+  width: 265.6px;
+}
+.k-readings2 {
+  top: 290.2px;
+  left: 472px;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+}
+.rectangle-parent11 {
+  position: absolute;
+  top: 640.5px;
+  left: 204.8px;
+  border-radius: 36.93px;
+  background-color: var(--color-seagreen-300);
+  width: 538.9px;
+  height: 347.8px;
+  z-index: 1;
+}
+.ad48b32-aa36-4fd8-95b5-28d0005-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 36.95px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.k-readings3,
+.vanishing-giants-the-container {
+  position: absolute;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.vanishing-giants-the-container {
+  top: 278.7px;
+  left: 33.9px;
+  display: inline-block;
+  width: 265.6px;
+}
+.k-readings3 {
+  top: 285.2px;
+  left: 472px;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+}
+.ad48b32-aa36-4fd8-95b5-28d0005-parent {
+  position: absolute;
+  top: 278.7px;
+  left: 761.4px;
+  border-radius: 36.95px;
+  width: 538.8px;
+  height: 347.8px;
+  background-image: url(./public/6ad48b32aa364fd895b528d000500bff-1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+}
+.menu-container-child {
+  width: 20.9px;
+  height: 15.7px;
+  position: relative;
+  flex-shrink: 0;
+}
+.home4 {
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 29px;
+}
+.menu-buttons,
+.menu-buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.menu-buttons {
+  flex: 1;
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  padding: var(--padding-mid-5) var(--padding-30xl);
+}
+.menu-buttons-wrapper {
+  align-self: stretch;
+  overflow: hidden;
+  cursor: pointer;
+}
+.endangered-animal4 {
+  margin-block-start: 0;
+  margin-block-end: 4px;
+}
+.endangered-animal-predictor-container4 {
+  width: 95px;
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.endangered-animal-predictor-wrapper1 {
+  flex: 1;
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base-5) var(--padding-mid);
+}
+.donations5 {
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 48px;
+}
+.donations-wrapper2,
+.nav-menu-child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.donations-wrapper2 {
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  padding: var(--padding-mid-5) var(--padding-21xl);
+}
+.nav-menu-child {
+  overflow: hidden;
+  cursor: pointer;
+}
+.blogs4 {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 93.86%;
+  text-transform: capitalize;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 27px;
+}
+.blogs-link {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mid-5) var(--padding-32xl);
+  background-color: var(--dark-green);
+  border-radius: 29.38px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.blogs-link:hover {
+  background-color: var(--color-teal);
+}
+.about-us6 {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 93.86%;
+  text-transform: capitalize;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  min-width: 44px;
+}
+.about-us-wrapper3 {
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid-5) var(--padding-23xl);
+  white-space: nowrap;
+}
+.nav-menu-inner1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+  flex-direction: row;
+}
+.menu-container,
+.nav-menu,
+.nav-menu-inner1,
+.navigation-bar1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.nav-menu {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  padding: 0;
+  gap: var(--gap-smi-9);
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.menu-container,
+.navigation-bar1 {
+  align-self: stretch;
+}
+.navigation-bar1 {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-6xs);
+}
+.menu-container {
+  flex-direction: column;
+  gap: var(--gap-mid-6);
+}
+.log-out4 {
+  position: relative;
+  font-size: var(--font-size-2xs-1);
+  line-height: 93.86%;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 45px;
+}
+.logout-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mid-5) var(--padding-23xl);
+  background-color: var(--color-darkslategray-300);
+  border-radius: 29.38px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.logout-button2:hover {
+  background-color: var(--color-dimgray);
+}
+.menu-container-parent {
+  position: absolute;
+  top: calc(50% - 522px);
+  left: 20px;
+  backdrop-filter: blur(39.44px);
+  border-radius: 23.48px;
+  background: linear-gradient(
+    107.78deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-3xl) var(--padding-lgi)
+    var(--padding-lgi);
+  gap: var(--gap-629xl-4);
+  z-index: 1;
+}
+.write-blog {
+  position: relative;
+  font-size: var(--font-size-sm-7);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 67px;
+}
+.write-blog-wrapper {
+  cursor: pointer;
+  border: 3px solid var(--green);
+  padding: var(--padding-mini) 31px var(--padding-mini) var(--padding-17xl);
+  background-color: var(--color-gray-900);
+  position: absolute;
+  top: 196px;
+  left: 1160.7px;
+  backdrop-filter: blur(77.06px);
+  border-radius: 26.37px;
+  box-sizing: border-box;
+  width: 140px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 1;
+}
+.write-blog-wrapper:hover {
+  background-color: var(--color-gainsboro-300);
+  border: 3px solid var(--color-mediumaquamarine);
+  box-sizing: border-box;
+}
+.biodiversity-v15 {
+  width: 100%;
+  height: 1084px;
+  position: relative;
+  background-color: var(--color-gray-600);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-base-2);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 750px) {
+  .blogs-that-inspire {
+    font-size: var(--font-size-26xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .blogs-that-inspire {
+    font-size: var(--font-size-15xl);
+  }
+  .rectangle-parent9 {
+    flex-wrap: wrap;
+  }
+  .biodiversity-v15 {
+    height: auto;
+    min-height: 1084;
+  }
+}

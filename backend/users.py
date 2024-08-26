@@ -8,11 +8,11 @@ mycol = mydb["users"]
 
 @app.route('/')
 def home():
-    return render_template('Welcome.html')
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
-    return render_template('Login.html')
+    return render_template('login.html')
 
 @app.route('/register')
 def register():
@@ -31,9 +31,41 @@ def search():
 def delete():
     return render_template('Delete.html')
 
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
+
+@app.route('/blog_editor.html')
+def blog_editor():
+    return render_template('blog_editor.html')
+
+@app.route('/home_old.html')
+def home_old():
+    return render_template('home_old.html')
+
+@app.route('/donation.html')
+def donation():
+    return render_template('donation.html')
+
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
+
+@app.route('/animal_predictor.html')
+def animal_predictor():
+    return render_template('animal_predictor.html')
+
+@app.route('/blogs.html')
+def blogs():
+    return render_template('blogs.html')
+
+@app.route('/article.html')
+def article():
+    return render_template('article.html')
+
 @app.route('/welcome')
 def welcome():
-    return render_template('Welcome.html')
+    return render_template('index.html')
 
 @app.route('/logout')
 def logout():
@@ -41,7 +73,7 @@ def logout():
     session.pop('email', None)
     session.pop('name', None)
     userAddedStatus="User " + name + " has been logged out.. "
-    return render_template('Welcome.html', userAddedStatus=userAddedStatus)
+    return render_template('index.html', userAddedStatus=userAddedStatus)
 
 
 @app.route('/userSignup', methods=['GET', 'POST'])
@@ -80,7 +112,7 @@ def userLogin():
             session['email'] = email
             session['name'] = rec["name"]
             userAddedStatus="User " + email + " Login Validated Successfully.. "
-            return render_template("Welcome.html", userAddedStatus=userAddedStatus)
+            return render_template("index.html", userAddedStatus=userAddedStatus)
         else:
             userAddedStatus="User " + email + " Login Validation Failed.. "
             return render_template("Login.html", userAddedStatus=userAddedStatus)

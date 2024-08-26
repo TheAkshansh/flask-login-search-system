@@ -1,0 +1,509 @@
+.biodiversity-v1-child4 {
+  position: absolute;
+  top: -153px;
+  left: -71px;
+  width: 2026px;
+  height: 1366px;
+}
+.learn-more24 {
+  height: 10px;
+  position: relative;
+  text-decoration: underline;
+  display: inline-block;
+}
+.learn-more-wrapper22 {
+  width: 70.8px;
+  border-radius: 13.81px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs-2) var(--padding-xs);
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.icon-park-outlinelike24 {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon-park-outlinelike-wrapper22 {
+  height: 20.7px;
+  width: 20.7px;
+  border-radius: 13.81px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs-2) var(--padding-9xs);
+  box-sizing: border-box;
+}
+.solarbookmark-broken-icon24 {
+  height: 10.4px;
+  width: 10.4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.solarbookmark-broken-wrapper22 {
+  height: 20.7px;
+  width: 20.7px;
+  border-radius: 13.81px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs-2) var(--padding-8xs);
+  box-sizing: border-box;
+}
+.frame-parent72 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-9);
+}
+.frame-parent71,
+.frame-parent73,
+.frame-parent75 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 185.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-parent73,
+.frame-parent75 {
+  left: 220.1px;
+}
+.frame-parent75 {
+  left: 440.3px;
+}
+.frame-parent70 {
+  position: absolute;
+  top: 531.5px;
+  left: 67px;
+  width: 626px;
+  height: 20.7px;
+  display: none;
+  font-size: var(--font-size-4xs-2);
+}
+.frame-child51 {
+  width: 963px;
+  height: 353px;
+  position: relative;
+  border-radius: 27.54px;
+  background-color: var(--color-gray-700);
+  display: none;
+  max-width: 100%;
+}
+.enter-the-feature {
+  margin: 0;
+  width: 322px;
+  position: relative;
+  font-size: inherit;
+  text-transform: capitalize;
+  font-weight: 200;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.feature-entry {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.ear-size-in {
+  text-transform: capitalize;
+}
+.cm {
+  text-transform: lowercase;
+}
+.ear-size-in-container {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs-9);
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-gray-1000);
+  text-align: center;
+}
+.size-fields-items {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.size-fields-items-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xl) var(--padding-17xl) var(--padding-3xl-1);
+  background-color: var(--dark-green);
+  flex: 1;
+  border-radius: var(--br-45xl-9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 78px;
+}
+.heart-length-in-container {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs-9);
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-gray-1000);
+  text-align: center;
+  display: inline-block;
+  min-width: 124.3px;
+}
+.frame-parent79 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 var(--padding-mini) 63.9px 0;
+  gap: 5px 6.9px;
+  z-index: 1;
+}
+.predict-endangered-animal {
+  position: relative;
+  font-size: var(--font-size-sm-7);
+  text-transform: capitalize;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.predict-endangered-animal-wrapper {
+  cursor: pointer;
+  border: 3px solid var(--green);
+  padding: var(--padding-lg) var(--padding-xl);
+  background-color: var(--color-gray-900);
+  align-self: stretch;
+  backdrop-filter: blur(77.06px);
+  border-radius: 75px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+}
+.predict-endangered-animal-wrapper:hover {
+  background-color: var(--color-gainsboro-300);
+  border: 3px solid var(--color-mediumaquamarine);
+  box-sizing: border-box;
+}
+.rectangle-parent12 {
+  position: absolute;
+  top: 640px;
+  left: 283px;
+  border-radius: 27.54px;
+  background-color: var(--color-gray-700);
+  width: 963px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px 69px var(--padding-24xl) var(--padding-52xl);
+  box-sizing: border-box;
+  gap: 36px;
+  max-width: 100%;
+  z-index: 1;
+}
+.endangered-animal-predictor,
+.guide-enter-the {
+  margin: 0;
+  position: absolute;
+  top: 115px;
+  left: 247px;
+  font-size: var(--font-size-37xl);
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: inherit;
+  display: inline-block;
+  width: 518px;
+  z-index: 1;
+}
+.guide-enter-the {
+  top: 582px;
+  left: 343px;
+  font-size: var(--font-size-5xl);
+  font-weight: 200;
+  width: 843px;
+  height: 29px;
+}
+.page-layout-child {
+  width: 20.9px;
+  height: 15.7px;
+  position: relative;
+  flex-shrink: 0;
+}
+.home5 {
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 29px;
+}
+.links-items,
+.links-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.links-items {
+  flex: 1;
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  padding: var(--padding-mid-5) var(--padding-30xl);
+}
+.links-items-wrapper {
+  align-self: stretch;
+  overflow: hidden;
+  cursor: pointer;
+}
+.endangered-animal5 {
+  margin-block-start: 0;
+  margin-block-end: 4px;
+}
+.home6 {
+  width: 95px;
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.home-frame {
+  flex: 1;
+  border-radius: 29.38px;
+  background-color: var(--dark-green);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base-5) var(--padding-mid);
+}
+.donations6 {
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 48px;
+}
+.donations-wrapper3,
+.frame-wrapper8 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.donations-wrapper3 {
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  padding: var(--padding-mid-5) var(--padding-21xl);
+}
+.frame-wrapper8 {
+  overflow: hidden;
+  cursor: pointer;
+}
+.blogs5 {
+  position: relative;
+  line-height: 93.86%;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 27px;
+}
+.blogs-wrapper2 {
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid-5) var(--padding-32xl);
+}
+.about-us7 {
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 93.86%;
+  text-transform: capitalize;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  min-width: 44px;
+}
+.about-us-wrapper4 {
+  border-radius: 29.38px;
+  background-color: var(--color-gray-500);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid-6) var(--padding-23xl) var(--padding-mid-4);
+  white-space: nowrap;
+}
+.frame-wrapper10 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+  flex-direction: row;
+}
+.frame-nav,
+.frame-wrapper10,
+.navigation1,
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-nav {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 0 var(--padding-12xs-1) 0;
+  gap: var(--gap-smi-8);
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--font-size-3xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.navigation1,
+.page-layout {
+  align-self: stretch;
+}
+.navigation1 {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-6xs);
+}
+.page-layout {
+  flex-direction: column;
+  gap: var(--gap-mid-6);
+}
+.log-out5 {
+  position: relative;
+  font-size: var(--font-size-2xs-1);
+  line-height: 93.86%;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 45px;
+}
+.log-out-frame,
+.page-layout-parent {
+  display: flex;
+  justify-content: flex-start;
+}
+.log-out-frame {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mid-5) var(--padding-23xl);
+  background-color: var(--color-darkslategray-300);
+  border-radius: 29.38px;
+  flex-direction: row;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+.log-out-frame:hover {
+  background-color: var(--color-dimgray);
+}
+.page-layout-parent {
+  position: absolute;
+  top: calc(50% - 532px);
+  left: 20px;
+  backdrop-filter: blur(39.44px);
+  border-radius: 23.48px;
+  background: linear-gradient(
+    107.78deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 180px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-mid) var(--padding-4xl) var(--padding-lgi)
+    var(--padding-lg);
+  gap: var(--gap-629xl-4);
+  z-index: 1;
+}
+.an-ai-predictor {
+  margin: 0;
+}
+.an-ai-predictor-container {
+  margin: 0;
+  position: absolute;
+  top: 266px;
+  left: 247px;
+  font-size: inherit;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 999px;
+  height: 316px;
+  z-index: 1;
+}
+.biodiversity-v16 {
+  width: 100%;
+  height: 1084px;
+  position: relative;
+  background-color: var(--color-gray-600);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 750px) {
+  .endangered-animal-predictor {
+    font-size: var(--font-size-26xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .enter-the-feature {
+    font-size: var(--font-size-base);
+  }
+  .endangered-animal-predictor {
+    font-size: var(--font-size-15xl);
+  }
+  .guide-enter-the {
+    font-size: var(--font-size-lgi);
+  }
+  .an-ai-predictor-container {
+    font-size: var(--font-size-base);
+  }
+}
